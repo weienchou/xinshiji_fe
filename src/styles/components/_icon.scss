@@ -1,0 +1,49 @@
+.icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    min-height: 2rem;
+    width: 22px;
+    min-width: max-content;
+
+    &-small {
+        --ggs: .6;
+    }
+
+    // &+span {
+    //     margin-left: 6px;
+    // }
+
+    &>* {
+        transition: all .1s;
+        color: inherit;
+        fill: currentColor;
+    }
+
+    &.align-middle {
+        margin-right: 8px;
+    }
+
+    i {
+        // width: 1.125em;
+        // height: 1em;
+    }
+
+    &--fw {
+        display: block;
+
+        height: 6px;
+
+        width: 1.25em;
+        font-size: 1.25rem;
+
+        &:before {
+            bottom: 100%;
+            left: 50%;
+            margin-bottom: 5px;
+            transform: translate(-50%, 10px);
+            transform-origin: top;
+        }
+    }
+}

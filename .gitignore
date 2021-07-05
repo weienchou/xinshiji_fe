@@ -1,0 +1,7 @@
+.DS_Store
+tmps/cache/*
+tmps/*
+config.ini
+keys/*.key
+node_modules
+.vscode

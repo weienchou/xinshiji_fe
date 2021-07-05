@@ -1,0 +1,56 @@
+{
+  "name": "ccl_home",
+  "version": "1.0.0",
+  "description": "ccl_home",
+  "main": "index.js",
+  "scripts": {
+    "dev": "NODE_ENV=dev webpack-dev-server --open --content-base src --hot --inline --progress --config build/webpack.config.dev.js",
+    "build": "webpack -p --progress --config build/webpack.config.build.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ccl_home.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "ccl_home.co/issues"
+  },
+  "homepage": "ccl_home.co",
+  "devDependencies": {
+    "@babel/core": "^7.12.10",
+    "@babel/preset-env": "^7.12.10",
+    "@creativebulma/bulma-collapsible": "^1.0.4",
+    "autoprefixer": "^9.8.6",
+    "babel-loader": "^8.2.2",
+    "clean-webpack-plugin": "^3.0.0",
+    "copy-webpack-plugin": "^6.4.0",
+    "css-loader": "^3.6.0",
+    "cssnano": "^5.0.6",
+    "ejs-compiled-loader": "^3.0.0",
+    "file-loader": "^6.2.0",
+    "html-minifier": "^4.0.0",
+    "html-webpack-plugin": "^4.3.0",
+    "mini-css-extract-plugin": "^1.6.0",
+    "node-json-minify": "^1.0.0",
+    "optimize-css-assets-webpack-plugin": "^6.0.0",
+    "postcss": "^8.3.5",
+    "postcss-loader": "^4.2.0",
+    "purgecss-webpack-plugin": "^4.0.3",
+    "sass-loader": "^10.1.1",
+    "tailwindcss": "^2.1.4",
+    "terser-webpack-plugin": "^3.1.0",
+    "url-loader": "^4.1.0",
+    "webpack": "^4.44.1",
+    "webpack-cli": "^3.3.12",
+    "webpack-dev-server": "^3.11.0"
+  },
+  "dependencies": {
+    "@tailwindcss/forms": "^0.3.3",
+    "feather-icons": "^4.28.0",
+    "gene-event-handler": "0.0.1",
+    "jquery": "^3.5.1",
+    "jquery.marquee": "^1.6.0",
+    "node-sass": "^4.14.1"
+  }
+}

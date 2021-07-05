@@ -1,0 +1,37 @@
+.page-wrapper.with-navbar>.sticky-alerts {
+    top: auto;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+
+    //     .alert {
+    //         width: 100%;
+    //         height: 100%;
+    //     }
+}
+
+.sticky-alerts {
+    .alert {
+        &.alert-block {
+            width: calc(100% - 4rem);
+            margin: 2rem;
+            height: 5rem;
+
+            display: flex;
+            align-items: center;
+        }
+    }
+}
+
+.alert {
+    &-black {
+        color: white;
+        background-color: black;
+        border-color: black;
+
+        .close {
+            display: none;
+        }
+    }
+}

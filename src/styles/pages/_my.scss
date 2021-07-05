@@ -1,0 +1,46 @@
+.my {
+    &-wrapper {}
+
+    &-item {
+        color: $color-grey-2;
+
+        padding: 20px 0px;
+        border-top: 1px solid rgba(0, 0, 0, 0.15);
+
+        &:last-child {
+            border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+        }
+
+        &-date {}
+
+        &-id {
+            color: $color-red;
+            font-weight: $fw-bold;
+        }
+
+        &-price {
+            color: $color-grey-4;
+        }
+
+        &-status {
+            .tag-item {
+                border: none;
+            }
+        }
+
+        span {
+            display: block;
+        }
+    }
+
+    &-action {
+
+        &-wrapper {
+            margin-top: 15px;
+
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+    }
+}

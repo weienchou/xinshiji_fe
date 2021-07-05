@@ -1,0 +1,32 @@
+.tag {
+    &-container {
+        position: sticky;
+        top: 0px;
+        z-index: 50;
+
+        background: white;
+        padding-bottom: 10px;
+
+        transform: translate3d(0px, 0px, 0px);
+    }
+
+    &-wrapper {}
+
+    &-item {
+        width: fit-content;
+
+        border: 1px solid $color-red;
+        border-radius: 30px;
+
+        padding: 6px 12px;
+
+        color: $color-red;
+        background-color: #FBF2F1;
+
+        &--gray {
+            background-color: rgba(196, 196, 196, 0.3);
+            color: $color-grey-4;
+            border-color: $color-grey-4;
+        }
+    }
+}

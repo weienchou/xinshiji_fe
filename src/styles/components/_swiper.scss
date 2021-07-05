@@ -1,0 +1,13 @@
+.swiper {
+    &-slide {
+        a {
+
+            &,
+            &:visited,
+            &:link,
+            &:hover {
+                color: inherit;
+            }
+        }
+    }
+}

@@ -1,0 +1,14 @@
+html,
+body {
+    height: 100%;
+}
+
+body {
+    font-family: source-han-sans-cjk-tc, sans-serif;
+    -webkit-font-smoothing: antialiased;
+
+    line-height: 1.5;
+    color: $color-grey-1;
+    font-weight: $fw-nor;
+    scroll-behavior: smooth;
+}

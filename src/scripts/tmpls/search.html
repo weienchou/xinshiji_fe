@@ -1,0 +1,81 @@
+<div class="bg-white px-4 pt-5 pb-4 sm:p-6 sm:pb-4">
+  <div class="mt-3 text-center sm:mt-0 sm:text-left">
+    <h3 class="text-lg leading-6 font-medium text-gray-900" id="modal-title">申请进度查询</h3>
+    <div class="mt-4 mb-4">
+      <div class="grid grid-cols-1 gap-6">
+        <div class="col-span-6 sm:col-span-3">
+          <label for="first-name" class="block text-sm font-medium text-gray-700">会员帐号</label>
+          <input
+            type="text"
+            name="first-name"
+            id="first-name"
+            autocomplete="given-name"
+            class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full py-2 px-3 shadow-sm sm:text-sm border border-gray-300 rounded-md"
+          />
+        </div>
+        <div class="col-span-6 sm:col-span-3">
+          <label for="first-name" class="block text-sm font-medium text-gray-700 cursor-pointer">查询项目</label>
+          <select
+            name="query_option"
+            class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full py-2 px-3 shadow-sm sm:text-sm border border-gray-300 rounded-md"
+          >
+            <option value="">请选择查询项目</option>
+            <option value="16">会员首充</option>
+            <option value="18">亏损救援</option>
+            <option value="14">绝对优势</option>
+            <option value="15">网银入款</option>
+            <option value="17">午夜玩彩</option>
+            <option value="19">神秘彩金</option>
+          </select>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="bg-gray-50 px-4 py-3 sm:px-6 sm:flex sm:flex-row-reverse">
+  <button
+    type="button"
+    class="
+      w-full
+      inline-flex
+      justify-center
+      rounded-md
+      border border-transparent
+      shadow-sm
+      px-4
+      py-2
+      bg-red-600
+      text-base
+      font-medium
+      text-white
+      hover:bg-red-700
+      sm:ml-3 sm:w-auto sm:text-sm
+    "
+  >
+    查询
+  </button>
+  <button
+    type="button"
+    class="
+      mt-3
+      w-full
+      inline-flex
+      justify-center
+      rounded-md
+      border border-gray-300
+      shadow-sm
+      px-4
+      py-2
+      bg-white
+      text-base
+      font-medium
+      text-gray-700
+      hover:bg-gray-50
+      sm:mt-0 sm:ml-3 sm:w-auto sm:text-sm
+      gee
+    "
+    data-gene="click:popup/hide"
+  >
+    关闭
+  </button>
+</div>

@@ -1,0 +1,42 @@
+.events {
+    &-wrapper {
+        &:last-child {
+            margin-bottom: 4rem;
+        }
+    }
+
+    &-title {
+        font-size: $fz-5;
+    }
+
+    &-swiper {
+        margin-left: -2rem;
+        margin-right: -2rem;
+    }
+
+    &-item {
+        &__text {
+            span {
+                &:first-child {
+                    overflow: hidden;
+                    display: -webkit-box;
+                    -webkit-line-clamp: 2;
+                    -webkit-box-orient: vertical;
+                }
+            }
+        }
+
+        &__price {
+            font-size: $fz-5;
+            font-weight: $fw-bold;
+            color: $color-red;
+
+            &-fake {
+                color: $color-grey-2;
+                text-decoration: line-through;
+
+                margin-right: 4px;
+            }
+        }
+    }
+}

@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+    <title>XinShiJi</title>
+  </head>
+
+  <body class="subpixel-antialiased">
+    <div id="popup-normal" class="popup fixed hidden z-20 inset-0 overflow-y-auto" aria-labelledby="modal-title" role="dialog" aria-modal="true">
+      <div class="flex items-end justify-center min-h-screen pt-4 px-4 pb-20 text-center sm:block sm:p-0">
+        <div class="fixed inset-0 bg-gray-900 bg-opacity-75 transition-opacity" aria-hidden="true"></div>
+        <span class="hidden sm:inline-block sm:align-middle sm:h-screen" aria-hidden="true">&#8203;</span>
+        <div
+          class="
+            inline-block
+            align-bottom
+            bg-white
+            rounded-lg
+            text-left
+            overflow-hidden
+            shadow-xl
+            transform
+            transition-all
+            sm:my-8 sm:align-middle sm:max-w-lg
+            w-full
+            relative
+          "
+        >
+          <span class="absolute top-2 right-2 text-black z-10 rounded-full bg-white p-2 cursor-pointer gee" data-gene="click:popup/hide"
+            ><i data-feather="x" class="h-6 w-6"></i
+          ></span>
+          <div class="popup-body"></div>
+        </div>
+      </div>
+    </div>
+    <div id="popup-intro" class="popup fixed hidden z-30 inset-0 overflow-y-auto" aria-labelledby="modal-title" role="dialog" aria-modal="true">
+      <div class="flex items-end justify-center min-h-screen pt-4 px-4 pb-20 text-center sm:block sm:p-0">
+        <div class="fixed inset-0 bg-gray-900 bg-opacity-75 transition-opacity" aria-hidden="true"></div>
+        <span class="hidden sm:inline-block sm:align-middle sm:h-screen" aria-hidden="true">&#8203;</span>
+        <div
+          class="
+            inline-block
+            align-bottom
+            bg-white
+            rounded-lg
+            text-left
+            overflow-hidden
+            shadow-xl
+            transform
+            transition-all
+            sm:my-8 sm:align-middle sm:max-w-lg
+            w-full
+            relative
+          "
+        >
+          <span class="absolute top-2 right-2 text-black z-10 rounded-full bg-white p-2 cursor-pointer gee" data-gene="click:popup/hide"><i data-feather="x" class="h-6 w-6"></i></span>
+          <div class="popup-body"></div>
+        </div>
+      </div>
+    </div>
+    <header class="header flex flex-col w-full z-10 top-0">
+      <div class="content mx-auto flex items-center justify-between mt-0 py-6">
+        <!-- logo -->
+        <div class="h-20 w-72">
+          <a href="/"><img class="object-contain" src="images/logo.png" /></a>
+        </div>
+        <!-- title -->
+        <div>
+          <img class="" src="images/thhd2.png" />
+        </div>
+        <!-- apply -->
+        <div class="w-72 text-right cursor-pointer gee" data-gene="click:popup/show" data-ta="popup-normal" data-src="search">
+          <img src="images/jdcx.png" class="ml-auto" />
+        </div>
+      </div>
+      <nav class="nav nav--border">
+        <div class="content mx-auto flex justify-between items-center h-12">
+          <ul class="flex space-x-2 h-full">
+            <li>
+              <a href="#">
+                <div class="h-full w-20 flex justify-center items-center hover:bg-red-900">首页</div>
+              </a>
+            </li>
+            <li>
+              <a target="_blank" href="http://xsjcp898.com/xinShiJiCPLoginWeb/app/joinNow">
+                <div class="h-full w-20 flex justify-center items-center hover:bg-red-900">免费开户</div>
+              </a>
+            </li>
+            <li>
+              <a target="_blank" href="https://www.xsjcp980.com"> <div class="h-full w-20 flex justify-center items-center hover:bg-red-900">新手指南</div></a>
+            </li>
+            <li>
+              <a target="_blank" href="http://www.xsjcp980.com"> <div class="h-full w-20 flex justify-center items-center hover:bg-red-900">备用网址</div></a>
+            </li>
+          </ul>
+          <div>
+            <a href="https://chat-new.mqimg.com/widget/standalone.html?eid=154365"><img class="h-12" src="images/24hour.png" /></a>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main class="[min-h-full]">
+      <div class="content mx-auto py-4">
+        <!-- marquee -->
+        <div class="flex space-x-4 items-center mb-14">
+          <div>
+            <i data-feather="volume-2"></i>
+          </div>
+          <div
+            class="text-sm marquee w-full overflow-hidden"
+            data-duration="14000"
+            data-gap="40"
+            data-duplicated="true"
+            data-pauseOnHover="true"
+            data-startVisible="true"
+          >
+            <span class="hover:text-white cursor-default">欢迎来到新世纪彩票信誉网投平台，新会员首次入款，即送18元彩金，首存开户彩金，祝您首战全胜！</span>
+          </div>
+        </div>
+        <!-- promotion -->
+        <div class="promo p-8 pt-12 mb-6 rounded-lg">
+          <div class="promo__title"><img src="images/jxyh.png" /></div>
+          <div class="grid grid-cols-3 gap-4">
+            <% promo.forEach(function(item) { %>
+
+            <div class="promo__card flex flex-col space-y-2 items-center border border-gray-600 p-2" data-id="<%- item.id -%>" data-intro="<%- item.intro -%>">
+              <div>
+                <img src="<%- item.banner -%>?v=1" />
+              </div>
+              <div class="flex flex-col space-y-2">
+                <p class="js-title text-white text-center font-semibold text-lg"><%- item.title -%></p>
+                <div class="flex justify-center items-center space-x-4">
+                  <span class="promo__btn text-gray-900 text-sm px-6 py-2 cursor-pointer gee" data-gene="click:popup/show" data-ta="popup-normal" data-src="apply">会员首充</span>
+                  <span class="promo__btn text-gray-900 text-sm px-6 py-2 cursor-pointer gee" data-gene="click:popup/show" data-ta="popup-intro" data-src="intro">活动详情</span>
+                </div>
+              </div>
+            </div>
+
+            <% }); %>
+            <div class="promo__card flex flex-col space-y-2 items-center border border-gray-600 p-2">
+              <div>
+                <img src="images/jia.png" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <p class="helper text-xs text-center mb-6">
+          温馨提示：<strong>请点击对应活动类别申请，由于申请人众多，</strong>请勿重复提交，提交申请后专员将于1小时内审核办理<strong
+            >，提交申请后可以点击审核进度查询！</strong
+          >
+        </p>
+      </div>
+    </main>
+    <footer>
+      <div class="footer--short-link">
+        <div class="content mx-auto py-10">
+          <div class="grid grid-cols-2 gap-2">
+            <div class="grid grid-cols-2 gap-2">
+              <a href="http://xsjcp898.com/xinShiJiCPLoginWeb/app/joinNow">
+                <div class="short-link flex justify-center items-center space-x-4 py-8">
+                  <div class=""><i data-feather="user-plus" class="h-10 w-10"></i></div>
+                  <div class="flex flex-col"><span>免费开户</span><span>FREE ACCOUNT</span></div>
+                </div> </a
+              ><a href="https://www.xsjcp980.com/">
+                <div class="short-link flex justify-center items-center space-x-4 py-8">
+                  <div class=""><i data-feather="lock" class="h-10 w-10"></i></div>
+                  <div class="flex flex-col"><span>安全导航</span><span>SECURITY</span></div>
+                </div></a
+              ><a href="http://www.xsjcp563.com/">
+                <div class="short-link flex justify-center items-center space-x-4 py-8">
+                  <div class=""><i data-feather="smartphone" class="h-10 w-10"></i></div>
+                  <div class="flex flex-col"><span>APP下载</span><span>MOBILE CLIENT</span></div>
+                </div></a
+              ><a href="http://www.google.cn/intl/zh-CN/chrome/browser/desktop/index.html">
+                <div class="short-link flex justify-center items-center space-x-4 py-8">
+                  <div class=""><i data-feather="chrome" class="h-10 w-10"></i></div>
+                  <div class="flex flex-col"><span>谷歌浏览器</span><span>BROWOSE</span></div>
+                </div></a
+              >
+            </div>
+            <div class="short-empty max-h-60 overflow-hidden text-sm leading-loose">
+              <ul
+                class="h-44 my-8 mx-10 overflow-hidden marquee"
+                data-duration="14000"
+                data-gap="20"
+                data-duplicated="true"
+                data-direction="up"
+                data-pauseOnHover="true"
+                data-startVisible="true"
+              >
+                <li class="flex space-x-4 cursor-default">
+                  <span>恭喜！</span> <span class="text-red-600">pw1***</span> <span>成功办理</span>
+                  <span class="text-yellow-300">电子&amp;捕鱼【第三重】</span>
+                </li>
+                <li class="flex space-x-4 cursor-default">
+                  <span>恭喜！</span> <span class="text-red-600">xw4***</span> <span>成功办理</span>
+                  <span class="text-yellow-300">电子&amp;捕鱼【第三重】</span>
+                </li>
+                <li class="flex space-x-4 cursor-default">
+                  <span>恭喜！</span> <span class="text-red-600">qia***</span> <span>成功办理</span> <span class="text-yellow-300">真人视讯【劲爆四】</span>
+                </li>
+                <li class="flex space-x-4 cursor-default">
+                  <span>恭喜！</span> <span class="text-red-600">fan***</span> <span>成功办理</span>
+                  <span class="text-yellow-300">电子&amp;捕鱼【第四重】</span>
+                </li>
+                <li class="flex space-x-4 cursor-default">
+                  <span>恭喜！</span> <span class="text-red-600">xix***</span> <span>成功办理</span>
+                  <span class="text-yellow-300">电子&amp;捕鱼【第三重】</span>
+                </li>
+                <li class="flex space-x-4 cursor-default">
+                  <span>恭喜！</span> <span class="text-red-600">hpc***</span> <span>成功办理</span> <span class="text-yellow-300">真人视讯【劲爆一】</span>
+                </li>
+                <li class="flex space-x-4 cursor-default">
+                  <span>恭喜！</span> <span class="text-red-600">hpc***</span> <span>成功办理</span> <span class="text-yellow-300">真人视讯【劲爆五】</span>
+                </li>
+                <li class="flex space-x-4 cursor-default">
+                  <span>恭喜！</span> <span class="text-red-600">tia***</span> <span>成功办理</span> <span class="text-yellow-300">新会员专享【第一重】</span>
+                </li>
+                <li class="flex space-x-4 cursor-default">
+                  <span>恭喜！</span> <span class="text-red-600">dsf***</span> <span>成功办理</span> <span class="text-yellow-300">真人视讯【劲爆四】</span>
+                </li>
+                <li class="flex space-x-4 cursor-default">
+                  <span>恭喜！</span> <span class="text-red-600">wd2***</span> <span>成功办理</span> <span class="text-yellow-300">新会员专享【第一重】</span>
+                </li>
+                <li class="flex space-x-4 cursor-default">
+                  <span>恭喜！</span> <span class="text-red-600">jie***</span> <span>成功办理</span> <span class="text-yellow-300">新会员专享【第一重】</span>
+                </li>
+                <li class="flex space-x-4 cursor-default">
+                  <span>恭喜！</span> <span class="text-red-600">shg***</span> <span>成功办理</span>
+                  <span class="text-yellow-300">电子&amp;捕鱼【第八重】</span>
+                </li>
+                <li class="flex space-x-4 cursor-default">
+                  <span>恭喜！</span> <span class="text-red-600">wxm***</span> <span>成功办理</span> <span class="text-yellow-300">新会员专享【第一重】</span>
+                </li>
+                <li class="flex space-x-4 cursor-default">
+                  <span>恭喜！</span> <span class="text-red-600">lei***</span> <span>成功办理</span> <span class="text-yellow-300">新会员专享【第一重】</span>
+                </li>
+                <li class="flex space-x-4 cursor-default">
+                  <span>恭喜！</span> <span class="text-red-600">qq1***</span> <span>成功办理</span> <span class="text-yellow-300">新会员专享【第一重】</span>
+                </li>
+                <li class="flex space-x-4 cursor-default">
+                  <span>恭喜！</span> <span class="text-red-600">gao***</span> <span>成功办理</span>
+                  <span class="text-yellow-300">电子&amp;捕鱼【第五重】</span>
+                </li>
+                <li class="flex space-x-4 cursor-default">
+                  <span>恭喜！</span> <span class="text-red-600">fei***</span> <span>成功办理</span>
+                  <span class="text-yellow-300">电子&amp;捕鱼【第三重】</span>
+                </li>
+                <li class="flex space-x-4 cursor-default">
+                  <span>恭喜！</span> <span class="text-red-600">hem***</span> <span>成功办理</span> <span class="text-yellow-300">真人视讯【劲爆四】</span>
+                </li>
+                <li class="flex space-x-4 cursor-default">
+                  <span>恭喜！</span> <span class="text-red-600">lcx***</span> <span>成功办理</span>
+                  <span class="text-yellow-300">电子&amp;捕鱼【第三重】</span>
+                </li>
+                <li class="flex space-x-4 cursor-default">
+                  <span>恭喜！</span> <span class="text-red-600">han***</span> <span>成功办理</span> <span class="text-yellow-300">新会员专享【第一重】</span>
+                </li>
+                <li class="flex space-x-4 cursor-default">
+                  <span>恭喜！</span> <span class="text-red-600">bow***</span> <span>成功办理</span> <span class="text-yellow-300">棋牌游戏【第三惠】</span>
+                </li>
+                <li class="flex space-x-4 cursor-default">
+                  <span>恭喜！</span> <span class="text-red-600">fan***</span> <span>成功办理</span>
+                  <span class="text-yellow-300">电子&amp;捕鱼【第五重】</span>
+                </li>
+                <li class="flex space-x-4 cursor-default">
+                  <span>恭喜！</span> <span class="text-red-600">gao***</span> <span>成功办理</span>
+                  <span class="text-yellow-300">电子&amp;捕鱼【第五重】</span>
+                </li>
+                <li class="flex space-x-4 cursor-default">
+                  <span>恭喜！</span> <span class="text-red-600">fgw***</span> <span>成功办理</span> <span class="text-yellow-300">真人视讯【劲爆五】</span>
+                </li>
+                <li class="flex space-x-4 cursor-default">
+                  <span>恭喜！</span> <span class="text-red-600">gao***</span> <span>成功办理</span>
+                  <span class="text-yellow-300">电子&amp;捕鱼【第五重】</span>
+                </li>
+                <li class="flex space-x-4 cursor-default">
+                  <span>恭喜！</span> <span class="text-red-600">h15***</span> <span>成功办理</span>
+                  <span class="text-yellow-300">电子&amp;捕鱼【第八重】</span>
+                </li>
+                <li class="flex space-x-4 cursor-default">
+                  <span>恭喜！</span> <span class="text-red-600">fan***</span> <span>成功办理</span>
+                  <span class="text-yellow-300">电子&amp;捕鱼【第八重】</span>
+                </li>
+                <li class="flex space-x-4 cursor-default">
+                  <span>恭喜！</span> <span class="text-red-600">ton***</span> <span>成功办理</span>
+                  <span class="text-yellow-300">电子&amp;捕鱼【第五重】</span>
+                </li>
+                <li class="flex space-x-4 cursor-default">
+                  <span>恭喜！</span> <span class="text-red-600">ton***</span> <span>成功办理</span> <span class="text-yellow-300">真人视讯【劲爆三】</span>
+                </li>
+                <li class="flex space-x-4 cursor-default">
+                  <span>恭喜！</span> <span class="text-red-600">w11***</span> <span>成功办理</span> <span class="text-yellow-300">新会员专享【第一重】</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="content mx-auto py-6">
+        <div class="text-center"><img src="images/z_img6.png" class="mx-auto mb-6" /></div>
+        <p class="text-xs text-center">建议您使用IE10浏览器或谷歌浏览器进行游戏 Copyright © 新世纪彩票 Reserved</p>
+      </div>
+    </footer>
+  </body>
+</html>

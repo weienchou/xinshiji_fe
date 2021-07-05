@@ -1,0 +1,24 @@
+.content {
+    &-title {
+        font-weight: $fw-bold;
+        font-size: $fz-5;
+    }
+
+    &-helper {
+        text-align: center;
+        color: $color-grey-2;
+        font-size: $fz-7;
+
+        margin-bottom: 30px;
+
+        &--left {
+            text-align: left;
+        }
+    }
+
+    &-wrapper {
+        &::-webkit-scrollbar {
+            display: none;
+        }
+    }
+}

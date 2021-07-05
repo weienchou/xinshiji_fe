@@ -1,0 +1,96 @@
+.btn {
+    $self: &;
+
+    color: $color-grey-2;
+    border-color: $color-grey-2;
+    border-radius: 6px;
+
+    &-icon {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        border: none;
+        box-shadow: none;
+
+        line-height: 2.5;
+
+        &.active {
+            border: none;
+            box-shadow: none;
+
+            color: var(--danger-color);
+
+            &:hover {
+                color: var(--danger-color) !important;
+            }
+        }
+
+        &:focus,
+        &:hover {
+            border: none;
+            box-shadow: none;
+            background-color: transparent !important;
+        }
+    }
+
+    &-danger {
+        &-disabled {
+            background-color: #ff384c4d !important;
+            border-color: transparent !important;
+        }
+    }
+
+    &-secondary {
+        color: $color-white !important;
+    }
+
+    &-disabled {
+        color: $color-white !important;
+        background-color: #C4C4C4;
+        border-color: #C4C4C4;
+    }
+
+    &-empty {}
+
+    &-lg {
+        font-size: $fz-7;
+
+        height: 48px;
+    }
+
+    &-helper {
+        color: $color-grey-2 !important;
+        text-decoration: underline;
+    }
+
+    &-outline {
+        &#{ $self }-danger {
+            background-color: transparent;
+            border-color: var(--danger-color);
+            color: var(--danger-color);
+        }
+    }
+
+    &.is-loading {
+        position: relative;
+        color: transparent;
+
+        &:after {
+            content: "";
+            position: absolute;
+            width: 16px;
+            height: 16px;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            margin: auto;
+            border: 4px solid transparent;
+            border-top-color: #ffffff;
+            border-radius: 50%;
+            animation: button-loading-spinner 1s ease infinite;
+        }
+    }
+}

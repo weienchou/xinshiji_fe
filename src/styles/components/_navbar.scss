@@ -1,0 +1,35 @@
+.navbar {
+    &-top {
+        border-bottom: none;
+        display: grid !important;
+        grid-template-columns: 24px 1fr 24px;
+        grid-template-rows: 1fr;
+        grid-template-areas: 'back title menu';
+        text-align: center;
+
+        font-size: $fz-5;
+        font-weight: $fw-bold;
+
+        .navbar-title {
+            grid-area: title;
+        }
+
+        .navbar-back {
+            grid-area: back;
+        }
+
+        .navbar-menu {
+            grid-area: menu;
+        }
+    }
+
+    &-bottom {
+        // height: 75px !important;
+        font-size: $fz-9;
+    }
+
+    &-top,
+    &-bottom {
+        user-select: none;
+    }
+}

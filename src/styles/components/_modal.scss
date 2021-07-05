@@ -1,0 +1,47 @@
+.modal {
+    $self: &;
+
+    &-dialog {
+        background-color: $color-white;
+    }
+
+    &-full {
+        #{ $self }-content {
+            margin-top: 0;
+            padding: 0px;
+        }
+    }
+
+    &-content {
+        .navbar {
+            &-top {
+                position: sticky;
+                top: 0px;
+            }
+        }
+    }
+
+    &--sm {
+        &.show {
+            top: 50% !important;
+            left: 50%;
+            transform: translateX(-50%) translateY(-50%);
+        }
+
+        #{ $self }-dialog {
+            background-color: #00000033;
+        }
+
+        #{ $self }-content {
+            margin-top: auto;
+        }
+    }
+}
+
+#modal-normal {
+    z-index: 200;
+}
+
+#modal-high {
+    z-index: 201;
+}

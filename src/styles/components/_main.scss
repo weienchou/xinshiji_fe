@@ -1,0 +1,43 @@
+.loadAnim {
+    // #main {
+
+    // }
+}
+
+.main {
+    &--loading {
+        position: relative;
+
+        &:before {
+            content: '';
+
+            position: fixed;
+            top: calc(var(--navbar-height) * -1);
+            left: 0;
+
+            width: 100%;
+            height: calc(100% + var(--navbar-fixed-bottom-height) + var(--navbar-height));
+
+            background: #00000099;
+            z-index: 500;
+        }
+
+        &:after {
+            content: '';
+
+            position: fixed;
+            top: 44%;
+            left: 44%;
+
+            width: 40px;
+            height: 40px;
+            // transform: scale(0) translateX(-50%) translateY(-50%);
+
+            background-color: $color-white;
+            border-radius: 100%;
+
+            animation: sk-scaleout 1.0s infinite ease-in-out;
+            z-index: 501;
+        }
+    }
+}

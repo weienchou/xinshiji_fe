@@ -1,0 +1,52 @@
+.form {
+    &-group {
+        &--custom {
+            label {
+                font-weight: $fw-bold;
+                color: $color-grey-4;
+            }
+
+            input,
+            select {
+                border: none;
+                height: 100%;
+
+                text-align: center;
+                text-align: -webkit-center;
+
+                text-align-last: center;
+                -ms-text-align-last: center;
+                -moz-text-align-last: center;
+
+                &:focus {
+                    outline: none;
+                    box-shadow: none;
+                }
+
+                // &.form-control:not([multiple]) {
+                //     background-position: calc(100% - 1.4rem) center;
+                // }
+            }
+
+            .icon {
+                color: #979797;
+            }
+
+            // input {
+            //     text-align-last: left;
+            // }
+        }
+    }
+}
+
+.control {
+    border: 1px solid rgba(0, 0, 0, .2);
+    border-radius: .4rem;
+
+    height: 47px;
+
+    .form-row {
+        margin-bottom: 0px;
+        height: 100%;
+    }
+}

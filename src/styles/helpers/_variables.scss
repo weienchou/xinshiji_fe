@@ -1,0 +1,32 @@
+$color-black: hsl(0, 0%, 4%) !default;
+$color-grey-1: #333333 !default;
+$color-grey-2: #979797 !default;
+$color-grey-3: #D0D0D0 !default;
+$color-grey-4: #222 !default;
+$color-grey-5: #666666 !default;
+$color-white: #FFFFFF !default;
+$color-red: #FF384C !default;
+$color-orange: #FF5959 !default;
+
+// $fz-1: 72px !default;
+// $fz-2: 56px !default;
+// $fz-3: 36px !default;
+// $fz-4: 30px !default;
+$fz-3: 20px !default;
+$fz-4: 24px !default;
+$fz-5: 18px !default;
+$fz-6: 16px !default;
+$fz-7: 14px !default;
+$fz-8: 12px !default;
+$fz-9: 10px !default;
+
+$fw-nor: 400;
+$fw-bold: 700;
+
+:root {
+    --danger-color: #FF384C;
+    --secondary-color: #FEA053;
+    --navbar-fixed-bottom-height: 75px;
+
+    --ggs: 1;
+}
